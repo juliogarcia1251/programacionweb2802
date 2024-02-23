@@ -1,0 +1,32 @@
+p {
+            display: inline-block;
+            padding: 5px;
+            margin: -2px;
+            color: white;
+
+        }
+
+        .caifanes {
+            width: 200px;height: 250px;
+            background-color: darkred;
+        }
+
+        .strokes {
+            width: 250px;height: 250px;
+            background-color: blueviolet;
+        }
+
+        .mana {
+            width: 250px;height: 250px;
+            background-color: darkgrey;
+        }
+
+        .soda {
+            width: 720px;height: 250px;
+            background-color: darkgoldenrod;
+        }
+
+        .beatles {
+            width: 350px;height: 250px;
+            background-color: indianred;
+        }
