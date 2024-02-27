@@ -1,0 +1,54 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    float: center;
+}
+
+header {
+    background-color: #a1ec9f;
+    color: black;
+    text-align: left;
+    font-family: Verdana, sans-serif;
+    float: center;
+}
+
+nav {
+    background-color: #444;
+    color: ghostwhite;
+    font-family: Tahoma, sans-serif;
+    float: center;
+}
+
+section {
+    background-color: lightblue;
+    display: flex;
+
+}
+
+article {
+    background-color: #d2c5f1;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-family: Trebuchet MS, sans-serif;
+    width: 70%;
+    float: light;
+}
+
+aside {
+    background-color: #e9c5f1;
+    border: 1px solid #ccc;
+    font-family: Impact, sans-serif;
+    float: right;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+header:hover, nav:hover, aside:hover, footer:hover, section:hover article {
+  background-color: black;
+  color: yellow;
+}
