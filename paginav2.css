@@ -1,0 +1,70 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #a1ec9f;
+    color: black;
+    text-align: left;
+    font-family: Verdana, sans-serif;
+    float: center;
+}
+
+div{
+    width: 100%;
+    max-width: 1800px;
+    min-width: 300px;
+}
+
+nav {
+    background-color: lightyellow;
+    color: black;
+    font-family: Tahoma, sans-serif;
+    float: center;
+}
+
+section {
+    background-color: lightblue;
+    display: flex;
+
+}
+
+article {
+    background-color: #d2c5f1;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-family: Trebuchet MS, sans-serif;
+    width: 70%;
+    float: light;
+}
+
+aside {
+    background-color: #e9c5f1;
+    border: 1px solid #ccc;
+    font-family: Impact, sans-serif;
+    width:30%;
+    float: right;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    width:100%;
+}
+header:hover, nav:hover, aside:hover, footer:hover, section:hover article {
+  background-color: black;
+  color: yellow;
+}
+@media screen and (max-width:700px){
+    div{
+        background-color: green;
+    }
+    header{
+        display: none;
+    }
+    aside{
+        display: none;
+    }
+}
