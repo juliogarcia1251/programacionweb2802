@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatenador de Nombres y Calculadora de Área de Triángulo</title>
+    <link rel="stylesheet" href="areatriangulo.css">
+</head>
+<body>
+
+<h1>Concatenador de Nombres y Calculadora de Área de Triángulo</h1>
+
+<label for="first_name">Primer Nombre:</label>
+<input type="text" id="first_name"><br>
+
+<label for="middle_name">Segundo Nombre:</label>
+<input type="text" id="middle_name"><br>
+
+<label for="last_name">Apellido:</label>
+<input type="text" id="last_name"><br>
+
+<button onclick="concatenateNames()">Concatenar Nombres</button><br>
+
+<label for="base">Base del Triángulo:</label>
+<input type="number" id="base"><br>
+
+<label for="height">Altura del Triángulo:</label>
+<input type="number" id="height"><br>
+
+<button onclick="calculateTriangleArea()">Calcular Área del Triángulo</button><br>
+
+<button onclick="restart()">Reiniciar</button><br>
+
+<div id="fullname"></div>
+<div id="area"></div>
+
+<script>
+    function concatenateNames() {
+        var firstName = document.getElementById("first_name").value;
+        var middleName = document.getElementById("middle_name").value;
+        var lastName = document.getElementById("last_name").value;
+
+        var fullName = firstName.trim() + " " + middleName.trim() + " " + lastName.trim();
+
+        document.getElementById("fullname").innerText = "Nombre Completo: " + fullName;
+    }
+
+    function calculateTriangleArea() {
+        var base = parseFloat(document.getElementById("base").value);
+        var height = parseFloat(document.getElementById("height").value);
+
+        var area = 0.5 * base * height;
+
+        document.getElementById("area").innerText = "Área del Triángulo: " + area.toFixed(2);
+    }
+
+    function restart() {
+        document.getElementById("first_name").value = "";
+        document.getElementById("middle_name").value = "";
+        document.getElementById("last_name").value = "";
+        document.getElementById("base").value = "";
+        document.getElementById("height").value = "";
+        document.getElementById("fullname").innerText = "";
+        document.getElementById("area").innerText = "";
+    }
+</script>
+
+</body>
+</html>
+

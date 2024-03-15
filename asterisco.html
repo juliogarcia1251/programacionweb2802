@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asteriscos</title>
+<link rel="stylesheet" href="asterisco.css">
+</head>
+<body>
+
+<div class="pyramid" id="pyramid">
+    *
+</div>
+
+<button onclick="increaseSize()">Aumentar</button>
+<button onclick="decreaseSize()">Disminuir</button>
+
+<script>
+    let size = 1; // Tamaño inicial de la pirámide
+
+    function increaseSize() {
+        size++;
+        updatePyramid();
+    }
+
+    function decreaseSize() {
+        if (size > 1) {
+            size--;
+            updatePyramid();
+        }
+    }
+
+    function updatePyramid() {
+        let pyramid = '';
+        for (let i = 1; i <= size; i++) {
+            pyramid += '*'.repeat(i) + '<br>';
+        }
+        document.getElementById('pyramid').innerHTML = pyramid;
+    }
+</script>
+
+</body>
+</html>

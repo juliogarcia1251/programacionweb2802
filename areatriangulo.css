@@ -1,0 +1,41 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            margin-bottom: 15px;
+            padding: 5px;
+            width: 200px;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: #greenyellow;
+            color: #grey;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #fullname, #area {
+            margin-top: 20px;
+            font-weight: bold;
+        }
